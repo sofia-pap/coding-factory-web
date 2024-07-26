@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #762124;
+    position: sticky;
+    top: 0;
+
+}
+
+/* .logo {
+    float: left;
+} */
+
+.logo > img {
+    width: auto;
+    height: 120px;
+    vertical-align: middle;
+}
+
+.navbar {
+    /* float: left; */
+    width: 500px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 120px;
+}
+
+.nav > li > a {
+    display: block; /*user-experience */
+    padding: 5px 10px; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar a:active {
+    background-color: cornflowerblue;
+}
+
+.nav > li:not(:first-child) > a:hover,
+.nav > li:not(:first-child) > a:focus {
+    background-color: white;
+    color: #762124;
+    transition: all 0.3s ease-in; /*delay στην αλλαγη χρωματος*/
+}
+
+.dropdown {
+    position: relative;
+    font-size: 1.2rem; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    padding-top: 50px; /* space between Home and submenu */
+    background-color: rgb(41, 66, 149);
+    width: 120px;
+    list-style: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.dropdown-content > li {
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+}
+
+.dropdown-content > li:last-of-type {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: aqua;
+}
+
+.dropdown > a {
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: flex;
+}
+
+.home-img {
+    overflow: hidden; /* για να διορθωθει το κενο 
+    που δημ/ται και στον parent(home-img) 
+    -->parent/child margin collapse */
+    height: calc(97vh - 120px);
+    background-image: url('../../images/tep-aueb2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /*για να πιανει το 100% του width */
+    background-position: center; /*κεντραρει την εικόνα */
+}
+
+.home-title {
+    width: 50%; /*50% της εικόνας*/
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600; /* 500 normal, 900 bold*/
+    text-align: center; /* για inline elemnt*/
+    margin-left: auto; /* για block elemnt */
+    margin-right: auto;
+    margin-top: 100px; /*  overflow hidden
+    στον parent. Δε γίνεται με 
+    padding γιατι πιανει όλο το box, 
+    αν θελαμε να το χρωματισουμε πχ) */
+}
+
+.gap-bottom {
+    margin-bottom: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* καθετη (default για το collumn) */
+    align-items: center; /*οριζόντια */
+}
+
+.footer {
+    display: flex;
+    height: 150px;
+    background-color: #762124;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    padding: 0 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social-text {
+    color: cornflowerblue;
+    font-size: 2rem;
+    margin-right: 5px;
+
+}
+
+.social > span {
+    margin-right: 10px;
+}
+
