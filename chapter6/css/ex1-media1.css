@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+@media print {
+    body {
+        background-color: green; /* βελτιστοποίηση για την εκτυπωση
+        μόνο για το print, για να μην χαλαει πολύ μελάνι */
+    }
+}
