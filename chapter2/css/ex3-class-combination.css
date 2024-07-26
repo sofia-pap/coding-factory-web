@@ -1,0 +1,26 @@
+body {
+    background-color: goldenrod;
+}
+
+/* Reusability purposes 
+(Υπερισχύει όταν δεν υπάρχει specificity*/
+
+.fg-light {
+        color: white;
+    }
+
+.aueb-header-bg {
+    /* color: white; */
+    background-color: red;
+}
+
+.cf-header-bg {
+    /* color: white; */
+    background-color: green;
+}
+
+.aueb-text-bg {
+    /* color: white; */
+    background-color: cornflowerblue;
+}
+

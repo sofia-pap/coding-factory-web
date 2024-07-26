@@ -1,0 +1,78 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: red;
+    background-color: aqua;
+}
+
+p, li {
+    color: blue;
+    background-color: grey;
+}
+
+.aueb-logo {
+    width: 400px;
+}
+
+img.aueb-logo {
+    height: auto;
+}
+
+p.aueb-logo {
+    color: antiquewhite;
+}
+
+#auebText {
+    color: bisque;
+}
+
+/* Order: link, visited, focus, hover, active */
+a:link {
+    /* Σε περιπτώσεις menu ειναι σωστό το 
+    text-decoration: none; */
+    text-decoration: none;
+    color: orangered;
+}
+
+/* Ψευδοκλάσεις a:visited */
+a:visited {
+    color: green;
+}
+
+/* Click on the link (msec)*/
+a:focus {
+    outline: none;
+    background-color: yellow;
+}
+
+/* Mouse over link */
+a:hover {
+    background-color: blue;
+}
+
+/* Πατημένο κλικ */
+a:active {
+    background-color: chocolate;
+    color: white;
+}
+
+li {
+    list-style-type: square;
+}
+
+/* positional selection, (άμεσοι απόγονοι του ul) */
+ul > li {
+    color: brown;
+}
+
+/* ολους τους απογονους του ul σε οποιοδηποτε βαθος
+    της ιεραρχίας */
+ul strong {
+    background-color: black;
+}
+
+ul em {
+    background-color: white;
+}

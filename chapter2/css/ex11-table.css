@@ -1,0 +1,38 @@
+table, th, td {
+    border: 3px solid black;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+th {
+    height: 70px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+td {
+    text-align: center;
+}
+
+thead {
+    background-color: aqua;
+}
+
+tbody {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: cornflowerblue;
+}
+
+tr:hover {
+    background-color: yellow;
+    color: red;
+}
+

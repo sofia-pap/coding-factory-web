@@ -1,0 +1,26 @@
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.cf-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.social > .fb-link > .fa-facebook {
+    color: blue;
+}
+
+.social > .fb-link:link {
+    text-decoration: none;
+    /* Για να φύγει η _ */
+    color: blue;
+    font-size: 30px;
+}
+
+.social > .fb-link:hover {
+    color: red;
+}

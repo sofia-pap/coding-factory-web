@@ -1,0 +1,54 @@
+* {
+    margin: 10px 2px;
+}
+
+/* Pseudo-class :first-of-type */
+.container > h2:first-of-type {
+    font-size: 24px;
+    color: red;
+}
+
+.container > p:first-of-type {
+    color: blue;
+}
+
+ul > :first-child {
+    font-weight: bold;
+}
+
+/* ul > :nth-child(3) {
+    color: red;
+    font-weight: bold;
+} */
+
+ul > :nth-child(odd) {
+    color: orange;
+}
+ul > :nth-child(even) {
+    color: blue;
+}
+
+/* Last priority */
+/*p {
+    color: red;
+}
+
+p {
+    color: blue;
+} */
+
+.special {
+    color: red;
+}
+
+/* Priority of tag over class (not suggested)
+    eg. used for packages with certain styling */
+p {
+    color: blue!important;
+}
+
+/* Styling Priority
+1. Inline
+2. id (not suggested for use with classes)
+3. class
+4. tag */

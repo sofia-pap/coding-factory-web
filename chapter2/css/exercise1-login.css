@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.container {
+    width: auto;
+    height: 700px;
+    background-color: rgb(85, 113, 205);
+    text-align: center;
+}
+
+.login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    color: grey;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    /* margin-top: 40px;
+    margin-bottom: 10px; */
+}
+
+.login-title {
+    font-size: 1.8rem;
+    margin-top: -2px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    background-color: rgb(228, 226, 226);
+    /* text-align:; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 0px -5px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.sign-in {
+    background-color: rgb(85, 113, 205);
+    color: white;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 0px -5px;
+    padding: 10px 65px;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.sign-in:hover {
+    opacity: 0.8;
+}
+
+.forgot-psw {
+    padding-bottom: 20px;
+}
+
+.prg {
+    padding-top: 20px;
+    color: white;
+}

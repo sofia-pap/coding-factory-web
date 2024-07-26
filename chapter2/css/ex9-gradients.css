@@ -1,0 +1,23 @@
+body {
+    background-color: lightpink;
+}
+
+.gradient-to-right {
+    width: 800px;
+    height: 200px;
+    /* background-color: turquoise; */
+    background-image: linear-gradient(to right, green 30%, red 70%);
+}
+
+.gradient-to-lefttop {
+    width: 800px;
+    height: 200px;
+    background-image: linear-gradient(to left top, green, red);
+}
+
+.gradient-to-top {
+    width: 800px;
+    height: 200px;
+    background-image: linear-gradient(to top, green, red);
+    
+}
