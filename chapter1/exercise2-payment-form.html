@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <h1>Φόρμα Πληρωμής</h1>
+
+    <p>Τα υποχρεωτικά πεδία ακολουθούνται από
+        <abbr title="Required field" style="color: red;">*</abbr>.</p>
+
+    <h2>Προσωπικά Στοιχεία</h2>
+
+    <div>
+        <fieldset style="width: 250px;">
+            <legend>Title</legend>
+            <input type="radio" name="title" value="mr" id="mr">
+            <label for="mr">Mr.</label><br>
+
+            <input type="radio" name="title" value="mrs" id="mrs">
+            <label for="mrs">Mrs.</label><br>
+
+            <input type="radio" name="title" value="dr" id="dr">
+            <label for="dr">Dr.</label><br>
+        </fieldset>
+    </div><br>
+
+    <div>
+        <label for="name">Name: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <input type="text" name="name" id="name">
+    </div>
+
+    <div>
+        <label for="email">E-mail: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <div>
+        <label for="password">Password: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <h2>Πληροφορίες Πληρωμής</h2>
+
+    <div>
+        <label for="card-type">Card type:</label>
+        <select name="card-type" id="card-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="paypal">Paypal</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="card-number"> Card number: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <input type="number" name="card-number" id="card-number" minlength="10">
+    </div>
+
+    <!-- <div>
+        <label for="expiration-date">Expiration date: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <select name="expireMM" id="expireMM">
+            <option value="jan">01</option>
+            <option value="feb">02</option>
+            <option value="mar">03</option>
+            <option value="apr">04</option>
+            <option value="may">05</option>
+            <option value="jun">06</option>
+            <option value="jul">07</option>
+            <option value="aug">08</option>
+            <option value="sep">09</option>
+            <option value="oct">10</option>
+            <option value="nov">11</option>
+            <option value="dec">12</option>
+        </select>
+        <select name="expireYY" id="expireYY">
+            <option value="jan">24</option>
+            <option value="feb">25</option>
+            <option value="mar">26</option>
+            <option value="apr">27</option>
+            <option value="may">28</option>            
+        </select>
+    </div> -->
+
+    <div>
+        <label for="expiration-date">Expiration date: <abbr title="Required field" style="color: red;">*</abbr></label>
+        <input type="text" name="expiration-date" id="expiration-date"
+            placeholder="MM/YY">
+    </div>
+
+    <div>
+        <input type="submit" value="Προχωρήστε στην πληρωμή">
+    </div>
+</body>
+</html>
