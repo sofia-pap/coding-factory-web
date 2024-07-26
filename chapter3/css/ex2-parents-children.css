@@ -1,0 +1,48 @@
+img {
+    width: 200px;
+    height: auto;
+}
+
+ul > li {
+    color: red;
+    border: 1px solid black;
+}
+
+ul a:link {
+    color: green;
+}
+
+ul > li:first-child {
+    background-color: aquamarine;
+    color: brown;
+}
+
+ul > li:not(:first-child) {
+    background-color: antiquewhite;
+    color: red;
+}
+
+/* Επιλεγει ολα τα siblings του img
+(στο ιδιο επιπεδο) */
+img ~ p {
+    background-color: goldenrod;
+}
+
+/* Το αμέσως επόμενο (όχι ολα) */
+h1 + p {
+    color: aliceblue;
+}
+
+a::before {
+    content: '\1F604';
+}
+
+a::after {
+    content: '\1F603';
+}
+
+/* Η εικόνα δεν εχει περιεχομενο
+οπότε δεν εφαρμόζει κάτι */
+img::after {
+    content: '1\F603';
+}

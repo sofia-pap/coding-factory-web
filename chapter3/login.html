@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <form>
+                    <div class="gap-bottom">
+                        <span class="login-text"><strong>Σύνδεση Χρήστη</strong></span>
+                    </div>
+
+                    <div class="form-input gap-bottom">
+                        <!-- <img src="../../images/chapter2/account.png" alt="Email photo"> -->
+                        <input class="img-position email-img"  id="email" type="email" 
+                            name="username" value="" placeholder="email" required>
+                    </div>
+
+                    <div class="form-input gap-bottom">
+                        <!-- <img src="../../images/chapter2/password.png" alt="Password photo"> -->
+                        <input class="img-position password-img " id="password" type="password"
+                            name="password" value="" placeholder="password" required>
+                    </div>
+                    
+
+                    <div class="gap-bottom">
+                        <input class="form-btn" type="submit" value="Σύνδεση">
+                    </div>
+
+                    <div class="gap-bottom account-text">
+                        <span>Δεν έχετε λογαριασμό; Δημιουργήστε έναν</span>
+                        <a class="account-link" href="/reset">εδώ</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

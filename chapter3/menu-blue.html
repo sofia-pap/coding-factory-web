@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Menu</title>
+
+    <link rel="stylesheet" href="./css/menu-blue.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <form>
+                    <div class="gap-bottom">
+                        <span class="login-text"><strong>Login</strong></span>
+                    </div>
+
+                    <div class="gap-bottom">
+                        <input class="form-input email" id="email" type="email" 
+                            name="username" value="" placeholder="E-mail"
+                            required autofocus />
+                    </div> 
+
+                    <div class="gap-bottom">
+                        <input class="form-input password" id="password" type="password" type="password"
+                            name="password" value="" placeholder="Password"
+                            required>
+                    </div>
+
+                    <div class="gap-bottom">
+                        <input class="form-btn" type="submit" value="Sign In">
+                    </div>
+
+                    <div class="gap-bottom">
+                        <a class="reset-link" href="/reset">Lost your password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="gap-bottom sign-up-text">
+            <span class="text-light">Don't have an account?</span>
+            <a class="account-link" href="/register">Sign up here!</a>
+        </div>
+    </div>
+</body>
+</html>

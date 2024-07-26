@@ -1,0 +1,30 @@
+/* Όλα τα h2 και όλα τα p
+που έχουν το attribute id */
+h2[id], p[id] {
+    background-color: aqua;
+}
+
+a[href="#"] {
+    background-color: yellow;
+}
+
+/* Όλα τα elements που έχουν
+attribute class και ΞΕΚΙΝΑΕΙ από
+"info" */
+*[class^="info"] {
+    background-color: chartreuse;
+}
+
+/* Όλα τα elements που έχουν
+attribute class και ΠΕΡΙΕΧΟΥΝ 
+το αλφαριθμητικο "text" */
+*[class*="text"] {
+    color: red;
+}
+
+/* Όλα τα elements που έχουν
+attribute class και ΤΕΛΕΙΩΝΕΙ με
+"title" */
+*[class$="title"] {
+    font-style: italic;
+}

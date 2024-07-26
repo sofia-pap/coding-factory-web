@@ -1,0 +1,12 @@
+.header {
+    height: 200px;
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+/* Για προσαρμογη ακριβως στο υψος της
+σελιδας και το header και την εικονα */
+.aueb-img > img {
+    width: auto;
+    height: calc(90vh - 200px);
+}

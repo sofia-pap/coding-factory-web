@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    /* στοιχιση στο κέντρο με ίσες αποστάσεις */
+    justify-content: space-around;
+    align-items: center; /* καθετo center */
+    
+    border: 1px solid black;
+    text-align: center;
+    min-height: 100px;
+}
+
+.container > h3:first-child {
+    color: red;
+}
+
+/* h3 {
+    display: inline-block;
+    margin-right: 55px;
+} */
+
+a {
+    /* display: inline-block; */
+    border: 1px solid black;
+    width: 300px;
+    height: 100px
+}

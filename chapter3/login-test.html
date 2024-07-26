@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email and Password Form</title>
+<style>
+  .input-container {
+    margin-bottom: 20px; /* Adds space between input boxes */
+    position: relative;
+  }
+
+  .input-container img {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* adjust size as needed */
+    height: auto;
+  }
+
+  .input-container input {
+    padding-left: 30px; /* make space for the image */
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <div class="input-container">
+    <img src="/images/chapter2/account.png" alt="Email Icon">
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+  </div>
+
+  <div class="input-container">
+    <img src="/images/chapter2/password.png" alt="Password Icon">
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Όλα τα h2 και όλα τα p
+που έχουν το attribute id */
+h2[id], p[id] {
+    background-color: aqua;
+}
+
+a[href="#"] {
+    background-color: yellow;
+}
+
+*[class^="info"] {
+    background-color: chartreuse;
+    border: 2px solid black;
+}
+
+*[class*="text"] {
+    color: red;
+}
+
+*[class$="title"] {
+    font-style: italic;
+}
+
+/* Εδώ το margin αφηνει κενο
+απο το border και πανω,
+ΓΥΡΩ (δεξια/αρ & πανω/κατω) */
+.info-text {
+    padding: 10px;
+    margin: 20px;
+}
